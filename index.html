@@ -1,10 +1,22 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+      nav {
+        display: flex;
+        background-color: azure;
+      }
+    </style>
   </head>
   <body>
     <header id="header">
       <img
+        width="100"
         id="header-img"
         src="https://assets.ajio.com/medias/sys_master/root/h70/hd5/13018713128990/-473Wx593H-460342492-blue-OUTFIT.jpg"
       />
@@ -29,8 +41,13 @@
       ></iframe>
     </section>
     <section id="section2">
-      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-        <input name="email"
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+      >
+        <input
+          name="email"
           id="email"
           type="email"
           placeholder="Enter Your Email"
